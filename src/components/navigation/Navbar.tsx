@@ -32,9 +32,7 @@ export const Navbar = () => {
           </NavLink>
         </nav>
         <div className="flex items-center gap-3">
-          <NavLink to="/login">
-            <Button shape="circle" icon={<UserOutlined />} />
-          </NavLink>
+          <Button shape="circle" icon={<UserOutlined />} />
           <Badge count={cartCount} size="small">
             <Button
               shape="circle"

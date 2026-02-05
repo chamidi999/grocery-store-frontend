@@ -12,8 +12,7 @@ import { OrderSuccessPage } from '../pages/OrderSuccessPage'
 import { OrdersHistoryPage } from '../pages/OrdersHistoryPage'
 import { OrderTrackingPage } from '../pages/OrderTrackingPage'
 import { WishlistPage } from '../pages/WishlistPage'
-import { LoginPage } from '../pages/LoginPage'
-import { RegisterPage } from '../pages/RegisterPage'
+import { LoginRegisterPage } from '../pages/LoginRegisterPage'
 import { ProfilePage } from '../pages/ProfilePage'
 import { AddressManagementPage } from '../pages/AddressManagementPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
@@ -37,8 +36,7 @@ export const AppRoutes = () => {
         <Route path="/addresses" element={<AddressManagementPage />} />
       </Route>
       <Route element={<AuthLayout />}>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/auth" element={<LoginRegisterPage />} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
